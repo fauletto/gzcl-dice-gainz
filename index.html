@@ -14,7 +14,37 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-nav">f</nav>
+    <!-- Title/Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid"></div>
+        <a href="#" class="navbar-brand">Test</a>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- One rep max inputs to calculate lift numbers -->
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputSquatMax" class="form-label">Squat 1RM (in pounds)</label>
+          <input type="number" class="form-control" id="inputSquatMax">
+        </div>
+        <div class="col-md-6">
+          <label for="inputBenchMax" class="form-label">Bench 1RM (in pounds)</label>
+          <input type="number" class="form-control" id="inputBenchMax">
+        </div>
+        <div class="col-md-6">
+          <label for="inputDeadliftMax" class="form-label">Deadlift 1RM (in pounds)</label>
+          <input type="number" class="form-control" id="inputDeadliftMax">
+        </div>
+        <div class="col-md-6">
+          <label for="inputOverheadPressMax" class="form-label">Overhead Press 1RM (in pounds)</label>
+          <input type="number" class="form-control" id="inputOverheadPressMax">
+        </div>
+
+      </form>
+    </div>
+    
+
+
     <script src="app.js"></script>
   </body>
 </html>
