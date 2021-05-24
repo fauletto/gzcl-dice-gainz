@@ -6,3 +6,11 @@ const accessoryLifts = ["Pull Up", "Chin Up", "Dip", "Dumbbell Hammer Curl", "EZ
 const getRandNumber = (n) =>{
   return Math.floor(Math.random() * n);
 }
+
+const getLift = (liftInput) =>{
+
+}
+
+const getReps = () =>{
+  
+}

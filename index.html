@@ -22,6 +22,7 @@
     </nav>
     <div class="container">
       <!-- One rep max inputs to calculate lift numbers -->
+      <h2 class="display-4 text-center">Enter your one rep maxes below:</h2>
       <form class="row g-3">
         <div class="col-md-6">
           <label for="inputSquatMax" class="form-label">Squat 1RM (in pounds)</label>
@@ -41,6 +42,22 @@
         </div>
 
       </form>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+        <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="btnradio1">Upper Only</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio2">Lower Only</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio3">Full Body</label>
+        </div>
+      </div>
+    <div class="container d-flex justify-content-center">
+      <button type="button" class="btn btn-secondary d">Roll the dice!</button>
     </div>
     
 
