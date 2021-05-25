@@ -22,42 +22,42 @@
     </nav>
     <div class="container">
       <!-- One rep max inputs to calculate lift numbers -->
-      <h2 class="display-4 text-center">Enter your one rep maxes below:</h2>
-      <form class="row g-3">
+      <h2 class="display-4 text-center mb-5">Enter your one rep maxes below:</h2>
+      <form class="row gy-3">
         <div class="col-md-6">
           <label for="inputSquatMax" class="form-label">Squat 1RM (in pounds)</label>
-          <input type="number" class="form-control" id="inputSquatMax">
+          <input type="number" class="form-control" id="inputSquatMax" min="0" max="1000">
         </div>
         <div class="col-md-6">
           <label for="inputBenchMax" class="form-label">Bench 1RM (in pounds)</label>
-          <input type="number" class="form-control" id="inputBenchMax">
+          <input type="number" class="form-control" id="inputBenchMax" min="0" max="1000">
         </div>
         <div class="col-md-6">
           <label for="inputDeadliftMax" class="form-label">Deadlift 1RM (in pounds)</label>
-          <input type="number" class="form-control" id="inputDeadliftMax">
+          <input type="number" class="form-control" id="inputDeadliftMax" min="0" max="1000">
         </div>
         <div class="col-md-6">
           <label for="inputOverheadPressMax" class="form-label">Overhead Press 1RM (in pounds)</label>
-          <input type="number" class="form-control" id="inputOverheadPressMax">
+          <input type="number" class="form-control" id="inputOverheadMax" min="0" max="1000">
         </div>
 
       </form>
     </div>
 
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-center mt-5">
         <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-          <label class="btn btn-outline-primary" for="btnradio1">Upper Only</label>
+          <input type="radio" class="btn-check" name="btnradio" id="upperRadio" autocomplete="off" checked>
+          <label class="btn btn-outline-secondary" for="upperRadio">Upper Only</label>
         
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio2">Lower Only</label>
+          <input type="radio" class="btn-check" name="btnradio" id="lowerRadio" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="lowerRadio">Lower Only</label>
         
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio3">Full Body</label>
+          <input type="radio" class="btn-check" name="btnradio" id="fullRadio" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="fullRadio">Full Body</label>
         </div>
       </div>
-    <div class="container d-flex justify-content-center">
-      <button type="button" class="btn btn-secondary d">Roll the dice!</button>
+    <div class="container d-flex justify-content-center mt-3">
+      <button type="button" class="btn btn-outline-dark d p-3" id="diceRollerBtn">Roll the dice!</button>
     </div>
     
 
