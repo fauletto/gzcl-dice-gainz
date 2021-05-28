@@ -83,7 +83,7 @@ const getRoutine = () =>{
 }
 
 rollDiceBtn.addEventListener('click', function(){
-  // getMaxes();
+  getMaxes();
   getRoutine();
   getReps();
 })
