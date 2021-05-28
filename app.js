@@ -51,8 +51,8 @@ const getReps = () =>{
   t2Reps = getRandNumber(10-6) + 6;
   t1FirstRepDisplay.innerText = `${t1Reps}`;
   t2FirstRepDisplay.innerText = `${t2Reps}`;
-  t1FollowUpRepDisplay.innerText = `${t1Reps} sets of 5`;
-  t2FollowUpRepDisplay.innerText = `4 sets of ${t2Reps / 2}`;
+  t1FollowUpRepDisplay.innerText = `${t1Reps} sets of 1`;
+  t2FollowUpRepDisplay.innerText = `4 sets of ${Math.floor(t2Reps / 2)}`;
 }
 
 const upperRoutine = () =>{
