@@ -57,12 +57,14 @@ const getReps = () =>{
 
 const upperRoutine = () =>{
   console.log("You've selected upper body lifts only!");
-  return upperBodyLifts[getRandNumber(upperBodyLifts.length)];
+  t1LiftDisplay.innerText = `${upperBodyLifts[getRandNumber(upperBodyLifts.length)]}`;
+  t2LiftDisplay.innerText = `${upperBodyLifts[getRandNumber(upperBodyLifts.length)]}`;
 }
 
 const lowerRoutine = () =>{
   console.log("You've selected lower body lifts only!");
-  return lowerBodyLifts[getRandNumber(upperBodyLifts.length)];
+  t1LiftDisplay.innerText = `${lowerBodyLifts[getRandNumber(lowerBodyLifts.length)]}`;
+  t2LiftDisplay.innerText = `${lowerBodyLifts[getRandNumber(lowerBodyLifts.length)]}`;
 }
 
 const fullRoutine = () =>{
