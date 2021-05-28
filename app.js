@@ -52,7 +52,7 @@ const getReps = () =>{
   t1FirstRepDisplay.innerText = `${t1Reps}`;
   t2FirstRepDisplay.innerText = `${t2Reps}`;
   t1FollowUpRepDisplay.innerText = `${t1Reps} sets of 1 rep`;
-  t2FollowUpRepDisplay.innerText = `4 sets of ${Math.floor(t2Reps / 2)} reps`;
+  t2FollowUpRepDisplay.innerText = `4-6 sets of ${Math.floor(t2Reps / 2)} reps`;
 }
 
 const upperRoutine = () =>{
