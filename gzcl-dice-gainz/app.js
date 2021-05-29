@@ -1,6 +1,7 @@
 // Variables to store array of lifts to be randomized
 const upperBodyLifts = ["Bench Press", "Incline Bench Press", "Overhead Press", "Push Press", "Barbell Row"];
 const lowerBodyLifts = ["Back Squat", "Front Squat", "Conventional Deadlift", "Sumo Deadlift", "Hack Squat"];
+const fullBodyLifts = ["Bench Press", "Incline Bench Press", "Overhead Press", "Push Press", "Barbell Row", "Back Squat", "Front Squat", "Conventional Deadlift", "Sumo Deadlift", "Hack Squat"];
 const squatMaxInput = document.querySelector('#inputSquatMax');
 const benchMaxInput = document.querySelector('#inputBenchMax');
 const deadliftMaxInput = document.querySelector('#inputDeadliftMax');
@@ -76,6 +77,9 @@ const lowerRoutine = () =>{
 
 const fullRoutine = () =>{
   console.log("Full body day");
+  t1LiftDisplay.innerText = `${fullBodyLifts[getRandNumber(fullBodyLifts.length)]}`;
+  t2ALiftDisplay.innerText = `${fullBodyLifts[getRandNumber(fullBodyLifts.length)]}`;
+  t2BLiftDisplay.innerText = `${fullBodyLifts[getRandNumber(fullBodyLifts.length)]}`;
 }
 
 const getRoutine = () =>{
