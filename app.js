@@ -44,6 +44,7 @@ let eightRM;
 let nineRM;
 let tenRM;
 let mainLift;
+let weightTarget;
 
 
 const getOneRepMax = (weightInput) =>{
@@ -89,22 +90,23 @@ const getLiftName = () =>{
 
 const testFunc = (liftName, repTarget) =>{
   if (repTarget === 3){
-    console.log(liftName * .95);
+    weightTarget = Math.round(liftName * .95);
   } else if (repTarget === 4){
-    console.log(liftName * .93);
+    weightTarget = Math.round(liftName * .93);
   } else if (repTarget === 5){
-    console.log(liftName * .85);
+    weightTarget = Math.round(liftName * .85);
   } else if (repTarget === 6){
-    console.log(liftName * .83);
+    weightTarget = Math.round(liftName * .83);
   } else if (repTarget === 7){
-    console.log(liftName * .82);
+    weightTarget = Math.round(liftName * .82);
   } else if (repTarget === 8){
-    console.log(liftName * .78);
+    weightTarget = Math.round(liftName * .78);
   } else if (repTarget === 9){
-    console.log(liftName * .76);
+    weightTarget = Math.round(liftName * .76);
   } else if (repTarget === 10){
-    console.log(liftName * .74);
+    weightTarget = Math.round(liftName * .74);
   }
+  return weightTarget;
 }
 
 const upperRoutine = () =>{
