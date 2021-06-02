@@ -11,9 +11,12 @@ const deadliftMaxInput = document.querySelector('#inputDeadliftMax');
 const overheadMaxInput = document.querySelector('#inputOverheadMax');
 const t1LiftDisplay = document.querySelector('#t1LiftDisplay');
 const t2LiftDisplay = document.querySelector('#t2LiftDisplay');
-const t3ALiftDisplay = document.querySelector('#t3ALift');
-const t3BLiftDisplay = document.querySelector('#t3BLift');
-const t3CLiftDisplay = document.querySelector('#t3CLift');
+const t3ALiftSelect = document.querySelector('#t3ALiftSelect');
+const t3BLiftSelect = document.querySelector('#t3BLiftSelect');
+const t3CLiftSelect = document.querySelector('#t3CLiftSelect');
+const t3ALiftDisplay = document.querySelector('#t3ALiftDisplay');
+const t3BLiftDisplay = document.querySelector('#t3BLiftDisplay');
+const t3CLiftDisplay = document.querySelector('#t3CLiftDisplay');
 const t1FirstRepDisplay = document.querySelector('#t1FirstRepDisplay');
 const t2AFirstRepDisplay = document.querySelector('#t2AFirstRepDisplay');
 const t2BFirstRepDisplay = document.querySelector('#t2BFirstRepDisplay');
@@ -208,9 +211,9 @@ const getLiftName = (userInput, liftName) =>{
 }
 
 t3LiftReset = () =>{
-  t3ALiftDisplay.value = "Select a lift";
-  t3BLiftDisplay.value = "Select a lift";
-  t3CLiftDisplay.value = "Select a lift";
+  t3ALiftSelect.value = "Select a lift";
+  t3BLiftSelect.value = "Select a lift";
+  t3CLiftSelect.value = "Select a lift";
 }
 
 const getT3Lifts = () =>{
@@ -218,21 +221,21 @@ const getT3Lifts = () =>{
   t3LowerCopy = [...lowerT3];
   t3FullCopy = [...fullBodyT3];
   if(upperSelect.checked){
-    t3ALift = getLiftName(t3ALiftDisplay, t3UpperCopy);
-    t3BLift = getLiftName(t3BLiftDisplay, t3UpperCopy);
-    t3CLift = getLiftName(t3CLiftDisplay, t3UpperCopy);
+    t3ALift = getLiftName(t3ALiftSelect, t3UpperCopy);
+    t3BLift = getLiftName(t3BLiftSelect, t3UpperCopy);
+    t3CLift = getLiftName(t3CLiftSelect, t3UpperCopy);
   }else if(lowerSelect.checked){
-    t3ALift = getLiftName(t3ALiftDisplay, t3LowerCopy);
-    t3BLift = getLiftName(t3BLiftDisplay, t3LowerCopy);
-    t3CLift = getLiftName(t3CLiftDisplay, t3LowerCopy);
+    t3ALift = getLiftName(t3ALiftSelect, t3LowerCopy);
+    t3BLift = getLiftName(t3BLiftSelect, t3LowerCopy);
+    t3CLift = getLiftName(t3CLiftSelect, t3LowerCopy);
   }else if(fullSelect.checked){
-    t3ALift = getLiftName(t3ALiftDisplay, t3FullCopy);
-    t3BLift = getLiftName(t3BLiftDisplay, t3FullCopy);
-    t3CLift = getLiftName(t3CLiftDisplay, t3FullCopy);
+    t3ALift = getLiftName(t3ALiftSelect, t3FullCopy);
+    t3BLift = getLiftName(t3BLiftSelect, t3FullCopy);
+    t3CLift = getLiftName(t3CLiftSelect, t3FullCopy);
   }
-  t3ALiftDisplay.value = `${t3ALift}`;
-  t3BLiftDisplay.value = `${t3BLift}`;
-  t3CLiftDisplay.value = `${t3CLift}`;
+  t3ALiftDisplay.innerText = `${t3ALift}`;
+  t3BLiftDisplay.innerText = `${t3BLift}`;
+  t3CLiftDisplay.innerText = `${t3CLift}`;
 }
 
 const getRoutine = () =>{

@@ -14,81 +14,344 @@
     />
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body class = "bg-light">
+  <body class="bg-light">
     <!-- Title/Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
       <a href="#" class="navbar-brand text-light">GZCL Dice Gainz</a>
     </nav>
     <div class="container">
       <div class="container-fluid bg-light text-dark pb-5">
-        <h1 class="display-3 text-center mb-3">GZCL | General Gainz | Dice Gainz</h1>
-        <p class="lead mb-3">Welcome to the GZCL General Gainz Dice Gainz app! This app is based on the General Gainz philosophy created by Cody Lefever (GZCL). The original description of the General Gainz philosophy can be found <a href="https://old.reddit.com/r/gzcl/comments/aqkdgo/happy_gday_gainerz/" target="_blank">by following this link.</a></p>
-        <p class="lead mb-3">General Gainz is a unique philosophy based on many of the principles of the GZCL method. It is essential to understand these principles before employing this methodology into your daily training. Refer to <a href="http://swoleateveryheight.blogspot.com/" target="_blank">GZCL's official blog</a> for more information on the principles of the GZCL method. There is a plethora of free information, programs, and templates available there.</p>
-        <p class="lead mb-3">Now, on with the Dice Gainz! You'll notice that General Gainz is referenced as a "philosophy" and not a program. That is because one of the best aspects of General Gainz is its flexibility and fluid structure. General Gainz is based on auto-regulation and intuition in the weight room. According to Cody, Dice Gainz is a useful tool for those who do not have a ton of time to have a defined plan; it takes away the thinking and allows you to jump right into lifting.</p>
-        <p class="lead mb-3">To use this app, simply enter your one rep maxes for the four main lifts in the boxes below. Then, select what lifts you'd like: upper body only, lower body only, or full body. Finally, roll the dice and follow your workout for the day! If you're not happy with the lifts...roll the dice again!</p>
-        <p class="fst-italic lead mb-3">*Note: Because General Gainz is based on auto-regulation and intuition, you may choose to not use the percentages based on your one-rep maxes. In that situation, simply use the weights appropriate to your target rep ranges.</p>
+        <h1 class="display-3 text-center mb-3">
+          GZCL | General Gainz | Dice Gainz
+        </h1>
+        <p class="lead mb-3">
+          Welcome to the GZCL General Gainz Dice Gainz app! This app is based on
+          the General Gainz philosophy created by Cody Lefever (GZCL). The
+          original description of the General Gainz philosophy can be found
+          <a
+            href="https://old.reddit.com/r/gzcl/comments/aqkdgo/happy_gday_gainerz/"
+            target="_blank"
+            >by following this link.</a
+          >
+        </p>
+        <p class="lead mb-3">
+          General Gainz is a unique philosophy based on many of the principles
+          of the GZCL method. It is essential to understand these principles
+          before employing this methodology into your daily training. Refer to
+          <a href="http://swoleateveryheight.blogspot.com/" target="_blank"
+            >GZCL's official blog</a
+          >
+          for more information on the principles of the GZCL method. There is a
+          plethora of free information, programs, and templates available there.
+        </p>
+        <p class="lead mb-3">
+          Now, on with the Dice Gainz! You'll notice that General Gainz is
+          referenced as a "philosophy" and not a program. That is because one of
+          the best aspects of General Gainz is its flexibility and fluid
+          structure. General Gainz is based on auto-regulation and intuition in
+          the weight room. According to Cody, Dice Gainz is a useful tool for
+          those who do not have a ton of time to have a defined plan; it takes
+          away the thinking and allows you to jump right into lifting.
+        </p>
+        <p class="lead mb-3">
+          To use this app, simply enter your one rep maxes for the four main
+          lifts in the boxes below. Then, select what lifts you'd like: upper
+          body only, lower body only, or full body. Finally, roll the dice and
+          follow your workout for the day! If you're not happy with the
+          lifts...roll the dice again!
+        </p>
+        <p class="fst-italic lead mb-3">
+          *Note: Because General Gainz is based on auto-regulation and
+          intuition, you may choose to not use the percentages based on your
+          one-rep maxes. In that situation, simply use the weights appropriate
+          to your target rep ranges.
+        </p>
       </div>
       <div class="container-fluid bg-dark text-light pb-5">
         <!-- One rep max inputs to calculate lift numbers -->
-        <h2 class="display-4 text-center mb-5">Enter your one rep maxes below:</h2>
+        <h2 class="display-4 text-center mb-5">
+          Enter your one rep maxes below:
+        </h2>
         <form class="row gy-3">
           <div class="col-md-6">
-            <label for="inputSquatMax" class="form-label">Squat 1RM (in pounds)</label>
-            <input type="number" class="form-control" id="inputSquatMax" min="0" max="1000">
+            <label for="inputSquatMax" class="form-label"
+              >Squat 1RM (in pounds)</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="inputSquatMax"
+              min="0"
+              max="1000"
+            />
           </div>
           <div class="col-md-6">
-            <label for="inputBenchMax" class="form-label">Bench 1RM (in pounds)</label>
-            <input type="number" class="form-control" id="inputBenchMax" min="0" max="1000">
+            <label for="inputBenchMax" class="form-label"
+              >Bench 1RM (in pounds)</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="inputBenchMax"
+              min="0"
+              max="1000"
+            />
           </div>
           <div class="col-md-6">
-            <label for="inputDeadliftMax" class="form-label">Deadlift 1RM (in pounds)</label>
-            <input type="number" class="form-control" id="inputDeadliftMax" min="0" max="1000">
+            <label for="inputDeadliftMax" class="form-label"
+              >Deadlift 1RM (in pounds)</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="inputDeadliftMax"
+              min="0"
+              max="1000"
+            />
           </div>
           <div class="col-md-6">
-            <label for="inputOverheadPressMax" class="form-label">Overhead Press 1RM (in pounds)</label>
-            <input type="number" class="form-control" id="inputOverheadMax" min="0" max="1000">
+            <label for="inputOverheadPressMax" class="form-label"
+              >Overhead Press 1RM (in pounds)</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="inputOverheadMax"
+              min="0"
+              max="1000"
+            />
           </div>
-  
+          <div class="col-md12">
+            <h3 class="display-10 text-center">
+              Select your tier 3 lifts (or leave blank to randomize):
+            </h3>
+          </div>
+          <div class="col-md-4">
+            <label for="inputOverheadPressMax" class="form-label"
+              >Tier 3A Lift:</label
+            >
+            <select
+              id="t3ALiftSelect"
+              class="form-select form-select-sm"
+              aria-label=".form-select-sm"
+            >
+              <option selected>Select a lift</option>
+              <option value="Pull-up">Pull-up</option>
+              <option value="Chin-up">Chin-up</option>
+              <option value="Dip">Dip</option>
+              <option value="Dumbbell Hammer Curl">Dumbbell Hammer Curl</option>
+              <option value="EZ Bar/Barbell Curl">EZ Bar/Barbell Curl</option>
+              <option value="Triceps Pushdown">Triceps Pushdown</option>
+              <option value="Skullcrusher">Skullcrusher</option>
+              <option value="Incline Dumbbell Bench Press">
+                Incline Dumbbell Bench Press
+              </option>
+              <option value="Flat Dumbbell Bench Press">
+                Flat Dumbbell Bench Press
+              </option>
+              <option value="Lateral Raise">Lateral Raise</option>
+              <option value="Dumbbell Overhead Press">
+                Dumbbell Overhead Press
+              </option>
+              <option value="Dumbbell SLDL">Dumbbell SLDL</option>
+              <option value="Dumbbell RDL">Dumbbell RDL</option>
+              <option value="Goblet Squat">Goblet Squat</option>
+              <option value="Leg Press">Leg Press</option>
+              <option value="Leg Curl">Leg Curl</option>
+              <option value="Leg Extension">Leg Extension</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inputOverheadPressMax" class="form-label"
+              >Tier 3B Lift:</label
+            >
+            <select
+              id="t3BLiftSelect"
+              class="form-select form-select-sm"
+              aria-label=".form-select-sm"
+            >
+              <option selected>Select a lift</option>
+              <option value="Pull-up">Pull-up</option>
+              <option value="Chin-up">Chin-up</option>
+              <option value="Dip">Dip</option>
+              <option value="Dumbbell Hammer Curl">Dumbbell Hammer Curl</option>
+              <option value="EZ Bar/Barbell Curl">EZ Bar/Barbell Curl</option>
+              <option value="Triceps Pushdown">Triceps Pushdown</option>
+              <option value="Skullcrusher">Skullcrusher</option>
+              <option value="Incline Dumbbell Bench Press">
+                Incline Dumbbell Bench Press
+              </option>
+              <option value="Flat Dumbbell Bench Press">
+                Flat Dumbbell Bench Press
+              </option>
+              <option value="Lateral Raise">Lateral Raise</option>
+              <option value="Dumbbell Overhead Press">
+                Dumbbell Overhead Press
+              </option>
+              <option value="Dumbbell SLDL">Dumbbell SLDL</option>
+              <option value="Dumbbell RDL">Dumbbell RDL</option>
+              <option value="Goblet Squat">Goblet Squat</option>
+              <option value="Leg Press">Leg Press</option>
+              <option value="Leg Curl">Leg Curl</option>
+              <option value="Leg Extension">Leg Extension</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inputOverheadPressMax" class="form-label"
+              >Tier 3C Lift:</label
+            >
+            <select
+              id="t3CLiftSelect"
+              class="form-select form-select-sm"
+              aria-label=".form-select-s"
+            >
+              <option selected>Select a lift</option>
+              <option value="Pull-up">Pull-up</option>
+              <option value="Chin-up">Chin-up</option>
+              <option value="Dip">Dip</option>
+              <option value="Dumbbell Hammer Curl">Dumbbell Hammer Curl</option>
+              <option value="EZ Bar/Barbell Curl">EZ Bar/Barbell Curl</option>
+              <option value="Triceps Pushdown">Triceps Pushdown</option>
+              <option value="Skullcrusher">Skullcrusher</option>
+              <option value="Incline Dumbbell Bench Press">
+                Incline Dumbbell Bench Press
+              </option>
+              <option value="Flat Dumbbell Bench Press">
+                Flat Dumbbell Bench Press
+              </option>
+              <option value="Lateral Raise">Lateral Raise</option>
+              <option value="Dumbbell Overhead Press">
+                Dumbbell Overhead Press
+              </option>
+              <option value="Dumbbell SLDL">Dumbbell SLDL</option>
+              <option value="Dumbbell RDL">Dumbbell RDL</option>
+              <option value="Goblet Squat">Goblet Squat</option>
+              <option value="Leg Press">Leg Press</option>
+              <option value="Leg Curl">Leg Curl</option>
+              <option value="Leg Extension">Leg Extension</option>
+            </select>
+          </div>
         </form>
       </div>
-  
+
       <div class="container-fluid d-flex justify-content-center mt-5">
-          <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="btnradio" id="upperRadio" autocomplete="off" checked >
-            <label class="btn btn-outline-secondary" for="upperRadio">Upper Only</label>
-          
-            <input type="radio" class="btn-check" name="btnradio" id="lowerRadio" autocomplete="off">
-            <label class="btn btn-outline-secondary" for="lowerRadio">Lower Only</label>
-          
-            <input type="radio" class="btn-check" name="btnradio" id="fullRadio" autocomplete="off">
-            <label class="btn btn-outline-secondary" for="fullRadio">Full Body</label>
-          </div>
+        <div
+          class="btn-group"
+          role="group"
+          aria-label="Basic radio toggle button group"
+        >
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="upperRadio"
+            autocomplete="off"
+            checked
+          />
+          <label class="btn btn-outline-secondary" for="upperRadio"
+            >Upper Only</label
+          >
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="lowerRadio"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-secondary" for="lowerRadio"
+            >Lower Only</label
+          >
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="fullRadio"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-secondary" for="fullRadio"
+            >Full Body</label
+          >
         </div>
-      <div class="container-fluid d-flex justify-content-center mt-3">
-        <button type="button" class="btn btn-outline-dark d p-3" id="diceRollerBtn">Roll the dice!</button>
       </div>
-      <div class="container-fluid d-flex justify-content-center mt-5 bg-dark text-light pt-2 pb-2">
+      <div class="container-fluid d-flex justify-content-center mt-3">
+        <button
+          type="button"
+          class="btn btn-outline-dark d p-3"
+          id="diceRollerBtn"
+        >
+          Roll the dice!
+        </button>
+      </div>
+      <div
+        class="
+          container-fluid
+          d-flex
+          justify-content-center
+          mt-5
+          bg-dark
+          text-light
+          pt-2
+          pb-2
+        "
+      >
         <h3 class="display-5 text-center">Your workout today is:</h3>
       </div>
-      <div class="container-fluid d-flex justify-content-center bg-dark text-light">
-        <table id="t1-t2-table" class="table table-responsive-sm table-dark table-striped ">
+      <div
+        class="container-fluid d-flex justify-content-center bg-dark text-light"
+      >
+        <table
+          id="t1-t2-table"
+          class="table table-responsive-sm table-dark table-striped"
+        >
           <thead>
             <tr>
               <th scope="col">Tier</th>
               <th scope="col">Lift</th>
               <th scope="col">First Set Rep Target</th>
               <th scope="col">Follow Up Sets Rep Target</th>
-              <th scope="col">Weight <a id ="weight-tip" href="#"data-bs-toggle="tooltip" data-bs-placement="top" title="Weight should not be derived from a percentage but may in the initial week or two as a reference. While training the rep ability with a weight becomes a better ‘known’ for the lifter, so “finding” a new (heavier) one becomes easier.">?</a></th>
-              <th scope="col">Difficulty <a id ="difficulty-tip" href="#"data-bs-toggle="tooltip" data-bs-placement="top" title="Easy: 2-3+ reps left in the tank. 
+              <th scope="col">
+                Weight
+                <a
+                  id="weight-tip"
+                  href="#"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Weight should not be derived from a percentage but may in the initial week or two as a reference. While training the rep ability with a weight becomes a better ‘known’ for the lifter, so “finding” a new (heavier) one becomes easier."
+                  >?</a
+                >
+              </th>
+              <th scope="col">
+                Difficulty
+                <a
+                  id="difficulty-tip"
+                  href="#"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Easy: 2-3+ reps left in the tank. 
   
 Moderate: 1 rep left in the tank.
   
-Hard: No reps left in the tank.">?</a></th>
-              <th scope="col">Progression <a id ="progression-tip" href="#"data-bs-toggle="tooltip" data-bs-placement="top" title="Push: Taking a weight from a lower rep max to a higher one. For example: Trying for a 5RM, but during the set the weight feels easy so the lifter continues the set until a hard rep, which may come at the 6th or 7th rep. 
+Hard: No reps left in the tank."
+                  >?</a
+                >
+              </th>
+              <th scope="col">
+                Progression
+                <a
+                  id="progression-tip"
+                  href="#"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Push: Taking a weight from a lower rep max to a higher one. For example: Trying for a 5RM, but during the set the weight feels easy so the lifter continues the set until a hard rep, which may come at the 6th or 7th rep. 
   
 Hold: Keeping a weight from a past workout and using it for the same rep max. Lifters may choose this if they feel they can “do better” with a 2nd chance. Maybe improving posture or speed, or even more sets with that known weight.
   
-Extend: Doing more sets with a held over weight, or doing more sets after an “easy” rep max. Done to build volume and to progress that weight eventually to a higher RM.">?</a></th>
+Extend: Doing more sets with a held over weight, or doing more sets after an “easy” rep max. Done to build volume and to progress that weight eventually to a higher RM."
+                  >?</a
+                >
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -99,7 +362,10 @@ Extend: Doing more sets with a held over weight, or doing more sets after an “
               <td id="t1FollowUpRepDisplay">Reps</td>
               <td id="t1WeightDisplay">Weight</td>
               <td id="t1Difficulty">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm">
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm"
+                >
                   <option selected>Select a difficulty</option>
                   <option value="Easy">Easy</option>
                   <option value="Moderate">Moderate</option>
@@ -107,7 +373,10 @@ Extend: Doing more sets with a held over weight, or doing more sets after an “
                 </select>
               </td>
               <td id="t1Progression">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm" >
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm"
+                >
                   <option selected>Next Session Action:</option>
                   <option value="Push">Push</option>
                   <option value="Hold">Hold</option>
@@ -122,7 +391,10 @@ Extend: Doing more sets with a held over weight, or doing more sets after an “
               <td id="t2AFollowUpRepDisplay">Reps</td>
               <td id="t2AWeightDisplay">Weight</td>
               <td id="t2ADifficulty">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm">
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm"
+                >
                   <option selected>Select a difficulty</option>
                   <option value="Easy">Easy</option>
                   <option value="Moderate">Moderate</option>
@@ -130,7 +402,10 @@ Extend: Doing more sets with a held over weight, or doing more sets after an “
                 </select>
               </td>
               <td id="t2AProgression">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm" >
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm"
+                >
                   <option selected>Next Session Action:</option>
                   <option value="Push">Push</option>
                   <option value="Hold">Hold</option>
@@ -145,7 +420,10 @@ Extend: Doing more sets with a held over weight, or doing more sets after an “
               <td id="t2BFollowUpRepDisplay">Reps</td>
               <td id="t2BWeightDisplay">Weight</td>
               <td id="t2BDifficulty">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm" >
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm"
+                >
                   <option selected>Select a difficulty</option>
                   <option value="Easy">Easy</option>
                   <option value="Moderate">Moderate</option>
@@ -153,7 +431,10 @@ Extend: Doing more sets with a held over weight, or doing more sets after an “
                 </select>
               </td>
               <td id="t2BProgression">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm" >
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm"
+                >
                   <option selected>Next Session Action:</option>
                   <option value="Push">Push</option>
                   <option value="Hold">Hold</option>
@@ -164,11 +445,20 @@ Extend: Doing more sets with a held over weight, or doing more sets after an “
           </tbody>
         </table>
       </div>
-      <div class="container-fluid d-flex justify-content-center bg-dark text-light">
-        <h3 class="display-10 text-center">Select your tier 3 lifts below:</h3>
-      </div>
-      <div class="container-fluid d-flex justify-content-center bg-dark text-light mb-3">
-        <table id="t3-table" class="table table-responsive-sm table-dark table-striped pb-5">
+      <div
+        class="
+          container-fluid
+          d-flex
+          justify-content-center
+          bg-dark
+          text-light
+          mb-3
+        "
+      >
+        <table
+          id="t3-table"
+          class="table table-responsive-sm table-dark table-striped pb-5"
+        >
           <thead>
             <tr>
               <th scope="col">Tier</th>
@@ -181,30 +471,14 @@ Extend: Doing more sets with a held over weight, or doing more sets after an “
           <tbody>
             <tr>
               <th scope="row">3A</th>
-              <td id="t3ALiftDisplay">
-                <select id="t3ALift" class="form-select form-select-sm" aria-label=".form-select-sm">
-                  <option selected>Select a lift</option>
-                  <option value="Pull-up">Pull-up</option>
-                  <option value="Chin-up">Chin-up</option>
-                  <option value="Dip">Dip</option>
-                  <option value="Dumbbell Hammer Curl">Dumbbell Hammer Curl</option>
-                  <option value="EZ Bar/Barbell Curl">EZ Bar/Barbell Curl</option>
-                  <option value="Triceps Pushdown">Triceps Pushdown</option>
-                  <option value="Skullcrusher">Skullcrusher</option>
-                  <option value="Incline Dumbbell Bench Press">Incline Dumbbell Bench Press</option>
-                  <option value="Flat Dumbbell Bench Press">Flat Dumbbell Bench Press</option>
-                  <option value="Lateral Raise">Lateral Raise</option>
-                  <option value="Dumbbell Overhead Press">Dumbbell Overhead Press</option>
-                  <option value="Dumbbell SLDL">Dumbbell SLDL</option>
-                  <option value="Dumbbell RDL">Dumbbell RDL</option>
-                  <option value="Goblet Squat">Goblet Squat</option>
-                  <option value="Leg Press">Leg Press</option>
-                  <option value="Leg Curl">Leg Curl</option>
-                  <option value="Leg Extension">Leg Extension</option>
-                </select>
+              <td>
+                <p id="t3ALiftDisplay">Lift</p>
               </td>
               <td id="t3AFirstRepDisplay">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm">
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm"
+                >
                   <option>3-5 Max Rep Sets</option>
                   <option value="3 MRS">3 MRS</option>
                   <option value="4 MRS">4 MRS</option>
@@ -212,38 +486,34 @@ Extend: Doing more sets with a held over weight, or doing more sets after an “
                 </select>
               </td>
               <td id="t3AFollowUpRepDisplay">
-                <input type="number" class="form-control" id="t3ARepInput" min="0" max="500">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="t3ARepInput"
+                  min="0"
+                  max="500"
+                />
               </td>
               <td id="t3AWeightDisplay">
-                <input type="number" class="form-control" id="t3ARepInput" min="0" max="500">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="t3ARepInput"
+                  min="0"
+                  max="500"
+                />
               </td>
             </tr>
             <tr>
               <th scope="row">3B</th>
-              <td id="t3BLiftDisplay">
-                <select id="t3BLift" class="form-select form-select-sm" aria-label=".form-select-sm">
-                  <option selected>Select a lift</option>
-                  <option value="Pull-up">Pull-up</option>
-                  <option value="Chin-up">Chin-up</option>
-                  <option value="Dip">Dip</option>
-                  <option value="Dumbbell Hammer Curl">Dumbbell Hammer Curl</option>
-                  <option value="EZ Bar/Barbell Curl">EZ Bar/Barbell Curl</option>
-                  <option value="Triceps Pushdown">Triceps Pushdown</option>
-                  <option value="Skullcrusher">Skullcrusher</option>
-                  <option value="Incline Dumbbell Bench Press">Incline Dumbbell Bench Press</option>
-                  <option value="Flat Dumbbell Bench Press">Flat Dumbbell Bench Press</option>
-                  <option value="Lateral Raise">Lateral Raise</option>
-                  <option value="Dumbbell Overhead Press">Dumbbell Overhead Press</option>
-                  <option value="Dumbbell SLDL">Dumbbell SLDL</option>
-                  <option value="Dumbbell RDL">Dumbbell RDL</option>
-                  <option value="Goblet Squat">Goblet Squat</option>
-                  <option value="Leg Press">Leg Press</option>
-                  <option value="Leg Curl">Leg Curl</option>
-                  <option value="Leg Extension">Leg Extension</option>
-                </select>
+              <td>
+                <p id="t3BLiftDisplay">Lift</p>
               </td>
               <td id="t3BFirstRepDisplay">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm">
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm"
+                >
                   <option>3-5 Max Rep Sets</option>
                   <option value="3 MRS">3 MRS</option>
                   <option value="4 MRS">4 MRS</option>
@@ -251,38 +521,34 @@ Extend: Doing more sets with a held over weight, or doing more sets after an “
                 </select>
               </td>
               <td id="t3BFollowUpRepDisplay">
-                <input type="number" class="form-control" id="t3BRepInput" min="0" max="500">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="t3BRepInput"
+                  min="0"
+                  max="500"
+                />
               </td>
               <td id="t3BWeightDisplay">
-                <input type="number" class="form-control" id="t3BWeightInput" min="0" max="500">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="t3BWeightInput"
+                  min="0"
+                  max="500"
+                />
               </td>
             </tr>
             <tr>
               <th scope="row">3C</th>
-              <td id="t3CLiftDisplay">
-                <select id="t3CLift" class="form-select form-select-sm" aria-label=".form-select-s">
-                  <option selected>Select a lift</option>
-                  <option value="Pull-up">Pull-up</option>
-                  <option value="Chin-up">Chin-up</option>
-                  <option value="Dip">Dip</option>
-                  <option value="Dumbbell Hammer Curl">Dumbbell Hammer Curl</option>
-                  <option value="EZ Bar/Barbell Curl">EZ Bar/Barbell Curl</option>
-                  <option value="Triceps Pushdown">Triceps Pushdown</option>
-                  <option value="Skullcrusher">Skullcrusher</option>
-                  <option value="Incline Dumbbell Bench Press">Incline Dumbbell Bench Press</option>
-                  <option value="Flat Dumbbell Bench Press">Flat Dumbbell Bench Press</option>
-                  <option value="Lateral Raise">Lateral Raise</option>
-                  <option value="Dumbbell Overhead Press">Dumbbell Overhead Press</option>
-                  <option value="Dumbbell SLDL">Dumbbell SLDL</option>
-                  <option value="Dumbbell RDL">Dumbbell RDL</option>
-                  <option value="Goblet Squat">Goblet Squat</option>
-                  <option value="Leg Press">Leg Press</option>
-                  <option value="Leg Curl">Leg Curl</option>
-                  <option value="Leg Extension">Leg Extension</option>
-                </select>
+              <td>
+                <p id="t3CLiftDisplay">Lift</p>
               </td>
               <td id="t3CFirstRepDisplay">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm">
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm"
+                >
                   <option>3-5 Max Rep Sets</option>
                   <option value="3 MRS">3 MRS</option>
                   <option value="4 MRS">4 MRS</option>
@@ -290,10 +556,22 @@ Extend: Doing more sets with a held over weight, or doing more sets after an “
                 </select>
               </td>
               <td id="t3CFollowUpRepDisplay">
-                <input type="number" class="form-control" id="t3CRepInput" min="0" max="500">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="t3CRepInput"
+                  min="0"
+                  max="500"
+                />
               </td>
               <td id="t3CWeightDisplay">
-                <input type="number" class="form-control" id="t3CWeightInput" min="0" max="500">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="t3CWeightInput"
+                  min="0"
+                  max="500"
+                />
               </td>
             </tr>
           </tbody>
