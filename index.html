@@ -4,24 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GZCL General Gainz | Dice Gainz</title>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <title>GZCL | General Gainz | Dice Gainz</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script
+      src="https://kit.fontawesome.com/ca4f060bcb.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body class="bg-light">
     <!-- Title/Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <a href="#" class="navbar-brand text-light">GZCL Dice Gainz</a>
+      <a
+        href="http://swoleateveryheight.blogspot.com/"
+        target="_blank"
+        class="navbar-brand text-light d-inline-block align-text-top ms-3"
+        ><img
+          class="bg-light"
+          src="https://dslv9ilpbe7p1.cloudfront.net/1k_Ndqo8z0DjCqux6x_jkA_store_logo_image.png"
+          alt=""
+          width="50"
+          height="50"
+      /></a>
+      <a
+        href="http://swoleateveryheight.blogspot.com/"
+        target="_blank"
+        class="navbar text-light d-inline-block align-text-top"
+        >GZCL
+      </a>
+      <a
+        href="https://reddit.com/r/gzcl/comments/aqkdgo/happy_gday_gainerz/"
+        target="_blank"
+        class="navbar text-light d-inline-block align-text-top ms-3"
+        >General Gainz
+      </a>
+      <a
+        href="https://reddit.com/r/gzcl/comments/aqkdgo/happy_gday_gainerz/"
+        target="_blank"
+        class="navbar text-light d-inline-block align-text-top ms-3 me-3"
+        >Dice Gainz</a
+      >
     </nav>
     <div class="container">
       <div class="container-fluid bg-light text-dark pb-5">
-        <h1 class="display-3 text-center mb-3">
+        <h1 class="display-3 text-center mb-4 mt-4">
           GZCL | General Gainz | Dice Gainz
         </h1>
         <p class="lead mb-3">
@@ -29,7 +62,8 @@
           the General Gainz philosophy created by Cody Lefever (GZCL). The
           original description of the General Gainz philosophy can be found
           <a
-            href="https://old.reddit.com/r/gzcl/comments/aqkdgo/happy_gday_gainerz/"
+            id="reddit-link"
+            href="https://reddit.com/r/gzcl/comments/aqkdgo/happy_gday_gainerz/"
             target="_blank"
             >by following this link.</a
           >
@@ -38,7 +72,10 @@
           General Gainz is a unique philosophy based on many of the principles
           of the GZCL method. It is essential to understand these principles
           before employing this methodology into your daily training. Refer to
-          <a href="http://swoleateveryheight.blogspot.com/" target="_blank"
+          <a
+            id="blog-link"
+            href="http://swoleateveryheight.blogspot.com/"
+            target="_blank"
             >GZCL's official blog</a
           >
           for more information on the principles of the GZCL method. There is a
@@ -50,8 +87,10 @@
           the best aspects of General Gainz is its flexibility and fluid
           structure. General Gainz is based on auto-regulation and intuition in
           the weight room. According to Cody, Dice Gainz is a useful tool for
-          those who do not have a ton of time to have a defined plan; it takes
-          away the thinking and allows you to jump right into lifting.
+          those who do not have a ton of time to have a defined plan, or perhaps
+          those between plans; it takes away the thinking and allows you to jump
+          right into lifting. If you're an overthinker who just wants to get
+          into the gym and lift, this is the plan for you!
         </p>
         <p class="lead mb-3">
           To use this app, simply enter your one rep maxes for the four main
@@ -69,7 +108,7 @@
       </div>
       <div class="container-fluid bg-dark text-light pb-5">
         <!-- One rep max inputs to calculate lift numbers -->
-        <h2 class="display-4 text-center mb-5">
+        <h2 class="display-10 text-center mb-4 pt-4">
           Enter your one rep maxes below:
         </h2>
         <form class="row gy-3">
@@ -234,7 +273,7 @@
         </form>
       </div>
 
-      <div class="container-fluid d-flex justify-content-center mt-5">
+      <div class="container-fluid d-flex justify-content-center mt-3">
         <div
           class="btn-group"
           role="group"
@@ -248,7 +287,7 @@
             autocomplete="off"
             checked
           />
-          <label class="btn btn-outline-secondary" for="upperRadio"
+          <label class="btn btn-outline-dark" for="upperRadio"
             >Upper Only</label
           >
 
@@ -259,7 +298,7 @@
             id="lowerRadio"
             autocomplete="off"
           />
-          <label class="btn btn-outline-secondary" for="lowerRadio"
+          <label class="btn btn-outline-dark" for="lowerRadio"
             >Lower Only</label
           >
 
@@ -270,17 +309,11 @@
             id="fullRadio"
             autocomplete="off"
           />
-          <label class="btn btn-outline-secondary" for="fullRadio"
-            >Full Body</label
-          >
+          <label class="btn btn-outline-dark" for="fullRadio">Full Body</label>
         </div>
       </div>
       <div class="container-fluid d-flex justify-content-center mt-3">
-        <button
-          type="button"
-          class="btn btn-outline-dark d p-3"
-          id="diceRollerBtn"
-        >
+        <button type="button" class="btn btn-dark d p-3" id="diceRollerBtn">
           Roll the dice!
         </button>
       </div>
@@ -289,7 +322,7 @@
           container-fluid
           d-flex
           justify-content-center
-          mt-5
+          mt-3
           bg-dark
           text-light
           pt-2
@@ -298,288 +331,330 @@
       >
         <h3 class="display-5 text-center">Your workout today is:</h3>
       </div>
-      <div
-        class="container-fluid d-flex justify-content-center bg-dark text-light"
-      >
-        <table
-          id="t1-t2-table"
-          class="table table-responsive-sm table-dark table-striped"
-        >
-          <thead>
-            <tr>
-              <th scope="col">Tier</th>
-              <th scope="col">Lift</th>
-              <th scope="col">First Set Rep Target</th>
-              <th scope="col">Follow Up Sets Rep Target</th>
-              <th scope="col">
-                Weight
-                <a
-                  id="weight-tip"
-                  href="#"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Weight should not be derived from a percentage but may in the initial week or two as a reference. While training the rep ability with a weight becomes a better ‘known’ for the lifter, so “finding” a new (heavier) one becomes easier."
-                  >?</a
-                >
-              </th>
-              <th scope="col">
-                Difficulty
-                <a
-                  id="difficulty-tip"
-                  href="#"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Easy: 2-3+ reps left in the tank. 
+      <div id="tableWrap">
+        <div class="table-responsive bg-dark text-light">
+          <table id="t1-t2-table" class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Tier</th>
+                <th scope="col">Lift</th>
+                <th scope="col">First Set Rep Target</th>
+                <th scope="col">Follow Up Sets Rep Target</th>
+                <th scope="col">
+                  Weight
+                  <a
+                    id="weight-tip"
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Weight should not be derived from a percentage but may in the initial week or two to be used as a reference. While training the rep ability with a weight becomes a better “known” for the lifter, so “finding” a new (heavier) one becomes easier."
+                    >?</a
+                  >
+                </th>
+                <th scope="col">
+                  Difficulty
+                  <a
+                    id="difficulty-tip"
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Easy: 2-3+ reps left in the tank. 
   
 Moderate: 1 rep left in the tank.
   
 Hard: No reps left in the tank."
-                  >?</a
-                >
-              </th>
-              <th scope="col">
-                Progression
-                <a
-                  id="progression-tip"
-                  href="#"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Push: Taking a weight from a lower rep max to a higher one. For example: Trying for a 5RM, but during the set the weight feels easy so the lifter continues the set until a hard rep, which may come at the 6th or 7th rep. 
+                    >?</a
+                  >
+                </th>
+                <th scope="col">
+                  Progression
+                  <a
+                    id="progression-tip"
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Push: Taking a weight from a lower rep max to a higher one. For example: Trying for a 5RM, but during the set the weight feels easy so the lifter continues the set until a hard rep, which may come at the 6th or 7th rep. 
   
 Hold: Keeping a weight from a past workout and using it for the same rep max. Lifters may choose this if they feel they can “do better” with a 2nd chance. Maybe improving posture or speed, or even more sets with that known weight.
   
 Extend: Doing more sets with a held over weight, or doing more sets after an “easy” rep max. Done to build volume and to progress that weight eventually to a higher RM."
-                  >?</a
-                >
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td id="t1LiftDisplay">Lift</td>
-              <td id="t1FirstRepDisplay">Reps</td>
-              <td id="t1FollowUpRepDisplay">Reps</td>
-              <td id="t1WeightDisplay">Weight</td>
-              <td id="t1Difficulty">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm"
-                >
-                  <option selected>Select a difficulty</option>
-                  <option value="Easy">Easy</option>
-                  <option value="Moderate">Moderate</option>
-                  <option value="Hard">Hard</option>
-                </select>
-              </td>
-              <td id="t1Progression">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm"
-                >
-                  <option selected>Next Session Action:</option>
-                  <option value="Push">Push</option>
-                  <option value="Hold">Hold</option>
-                  <option value="Extend">Extend</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2A</th>
-              <td id="t2ALiftDisplay">Lift</td>
-              <td id="t2AFirstRepDisplay">Reps</td>
-              <td id="t2AFollowUpRepDisplay">Reps</td>
-              <td id="t2AWeightDisplay">Weight</td>
-              <td id="t2ADifficulty">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm"
-                >
-                  <option selected>Select a difficulty</option>
-                  <option value="Easy">Easy</option>
-                  <option value="Moderate">Moderate</option>
-                  <option value="Hard">Hard</option>
-                </select>
-              </td>
-              <td id="t2AProgression">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm"
-                >
-                  <option selected>Next Session Action:</option>
-                  <option value="Push">Push</option>
-                  <option value="Hold">Hold</option>
-                  <option value="Extend">Extend</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2B</th>
-              <td id="t2BLiftDisplay">Lift</td>
-              <td id="t2BFirstRepDisplay">Reps</td>
-              <td id="t2BFollowUpRepDisplay">Reps</td>
-              <td id="t2BWeightDisplay">Weight</td>
-              <td id="t2BDifficulty">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm"
-                >
-                  <option selected>Select a difficulty</option>
-                  <option value="Easy">Easy</option>
-                  <option value="Moderate">Moderate</option>
-                  <option value="Hard">Hard</option>
-                </select>
-              </td>
-              <td id="t2BProgression">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm"
-                >
-                  <option selected>Next Session Action:</option>
-                  <option value="Push">Push</option>
-                  <option value="Hold">Hold</option>
-                  <option value="Extend">Extend</option>
-                </select>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div
-        class="
-          container-fluid
-          d-flex
-          justify-content-center
-          bg-dark
-          text-light
-          mb-3
-        "
-      >
-        <table
-          id="t3-table"
-          class="table table-responsive-sm table-dark table-striped pb-5"
-        >
-          <thead>
-            <tr>
-              <th scope="col">Tier</th>
-              <th scope="col">Lift</th>
-              <th scope="col">Total Sets</th>
-              <th scope="col">Total Reps</th>
-              <th scope="col">Weight Used</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">3A</th>
-              <td>
-                <p id="t3ALiftDisplay">Lift</p>
-              </td>
-              <td id="t3AFirstRepDisplay">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm"
-                >
-                  <option>3-5 Max Rep Sets</option>
-                  <option value="3 MRS">3 MRS</option>
-                  <option value="4 MRS">4 MRS</option>
-                  <option value="5 MRS">5 MRS</option>
-                </select>
-              </td>
-              <td id="t3AFollowUpRepDisplay">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="t3ARepInput"
-                  min="0"
-                  max="500"
-                />
-              </td>
-              <td id="t3AWeightDisplay">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="t3ARepInput"
-                  min="0"
-                  max="500"
-                />
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3B</th>
-              <td>
-                <p id="t3BLiftDisplay">Lift</p>
-              </td>
-              <td id="t3BFirstRepDisplay">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm"
-                >
-                  <option>3-5 Max Rep Sets</option>
-                  <option value="3 MRS">3 MRS</option>
-                  <option value="4 MRS">4 MRS</option>
-                  <option value="5 MRS">5 MRS</option>
-                </select>
-              </td>
-              <td id="t3BFollowUpRepDisplay">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="t3BRepInput"
-                  min="0"
-                  max="500"
-                />
-              </td>
-              <td id="t3BWeightDisplay">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="t3BWeightInput"
-                  min="0"
-                  max="500"
-                />
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3C</th>
-              <td>
-                <p id="t3CLiftDisplay">Lift</p>
-              </td>
-              <td id="t3CFirstRepDisplay">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm"
-                >
-                  <option>3-5 Max Rep Sets</option>
-                  <option value="3 MRS">3 MRS</option>
-                  <option value="4 MRS">4 MRS</option>
-                  <option value="5 MRS">5 MRS</option>
-                </select>
-              </td>
-              <td id="t3CFollowUpRepDisplay">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="t3CRepInput"
-                  min="0"
-                  max="500"
-                />
-              </td>
-              <td id="t3CWeightDisplay">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="t3CWeightInput"
-                  min="0"
-                  max="500"
-                />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                    >?</a
+                  >
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td id="t1LiftDisplay">Lift</td>
+                <td id="t1FirstRepDisplay">Reps</td>
+                <td id="t1FollowUpRepDisplay">Reps</td>
+                <td id="t1WeightDisplay">Weight</td>
+                <td id="t1Difficulty">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm"
+                  >
+                    <option selected>Select a difficulty</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Hard">Hard</option>
+                  </select>
+                </td>
+                <td id="t1Progression">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm"
+                  >
+                    <option selected>Next Session Action:</option>
+                    <option value="Push">Push</option>
+                    <option value="Hold">Hold</option>
+                    <option value="Extend">Extend</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2A</th>
+                <td id="t2ALiftDisplay">Lift</td>
+                <td id="t2AFirstRepDisplay">Reps</td>
+                <td id="t2AFollowUpRepDisplay">Reps</td>
+                <td id="t2AWeightDisplay">Weight</td>
+                <td id="t2ADifficulty">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm"
+                  >
+                    <option selected>Select a difficulty</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Hard">Hard</option>
+                  </select>
+                </td>
+                <td id="t2AProgression">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm"
+                  >
+                    <option selected>Next Session Action:</option>
+                    <option value="Push">Push</option>
+                    <option value="Hold">Hold</option>
+                    <option value="Extend">Extend</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2B</th>
+                <td id="t2BLiftDisplay">Lift</td>
+                <td id="t2BFirstRepDisplay">Reps</td>
+                <td id="t2BFollowUpRepDisplay">Reps</td>
+                <td id="t2BWeightDisplay">Weight</td>
+                <td id="t2BDifficulty">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm"
+                  >
+                    <option selected>Select a difficulty</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Hard">Hard</option>
+                  </select>
+                </td>
+                <td id="t2BProgression">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm"
+                  >
+                    <option selected>Next Session Action:</option>
+                    <option value="Push">Push</option>
+                    <option value="Hold">Hold</option>
+                    <option value="Extend">Extend</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-responsive bg-dark text-light mb-3">
+          <table id="t3-table" class="table table-dark table-striped pb-5">
+            <thead>
+              <tr>
+                <th scope="col">Tier</th>
+                <th scope="col">Lift</th>
+                <th scope="col">Total Sets</th>
+                <th scope="col">Total Reps</th>
+                <th scope="col">Weight Used</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">3A</th>
+                <td>
+                  <p id="t3ALiftDisplay">Lift</p>
+                </td>
+                <td id="t3AFirstRepDisplay">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm"
+                  >
+                    <option>3-5 Max Rep Sets</option>
+                    <option value="3 MRS">3 MRS</option>
+                    <option value="4 MRS">4 MRS</option>
+                    <option value="5 MRS">5 MRS</option>
+                  </select>
+                </td>
+                <td id="t3AFollowUpRepDisplay">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="t3ARepInput"
+                    min="0"
+                    max="500"
+                  />
+                </td>
+                <td id="t3AWeightDisplay">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="t3ARepInput"
+                    min="0"
+                    max="500"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3B</th>
+                <td>
+                  <p id="t3BLiftDisplay">Lift</p>
+                </td>
+                <td id="t3BFirstRepDisplay">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm"
+                  >
+                    <option>3-5 Max Rep Sets</option>
+                    <option value="3 MRS">3 MRS</option>
+                    <option value="4 MRS">4 MRS</option>
+                    <option value="5 MRS">5 MRS</option>
+                  </select>
+                </td>
+                <td id="t3BFollowUpRepDisplay">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="t3BRepInput"
+                    min="0"
+                    max="500"
+                  />
+                </td>
+                <td id="t3BWeightDisplay">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="t3BWeightInput"
+                    min="0"
+                    max="500"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3C</th>
+                <td>
+                  <p id="t3CLiftDisplay">Lift</p>
+                </td>
+                <td id="t3CFirstRepDisplay">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm"
+                  >
+                    <option>3-5 Max Rep Sets</option>
+                    <option value="3 MRS">3 MRS</option>
+                    <option value="4 MRS">4 MRS</option>
+                    <option value="5 MRS">5 MRS</option>
+                  </select>
+                </td>
+                <td id="t3CFollowUpRepDisplay">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="t3CRepInput"
+                    min="0"
+                    max="500"
+                  />
+                </td>
+                <td id="t3CWeightDisplay">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="t3CWeightInput"
+                    min="0"
+                    max="500"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
-    <nav class="navbar sticky-bottom navbar-expand-lg navbar-light bg-dark">
-      <a class="navbar-brand text-light" href="#">Fixed bottom</a>
+    <div
+      id="export-div"
+      class="container-fluid d-flex justify-content-center mt-3"
+    >
+      <button
+        type="button"
+        class="btn btn-dark d p-3 mb-3"
+        id="saveButton"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Exporting to Excel will only export lifts, rep ranges, and target weights. You will need to input difficulty and progression into the spreadsheet manually."
+      >
+        Export to Excel
+      </button>
+    </div>
+    <div id="copyright container-fluid justify-content-center">
+      <p class="text-center px-2">
+        <small
+          >GZCL, General Gainz, and Dice Gainz Copyright &copy; 2021 Cody
+          Lefever. | Website and App Copyright &copy; 2021 Frank Auletto. | All
+          Rights Reserved.</small
+        >
+      </p>
+    </div>
+
+    <nav
+      class="
+        footer
+        navbar
+        sticky-bottom
+        navbar-expand-lg navbar-light
+        bg-dark
+        text-light
+      "
+    >
+      <div class="lefever-social-links mx-auto">
+        <p class="text-center">Follow Cody Lefever:</p>
+        <a href="http://swoleateveryheight.blogspot.com/" target="_blank">
+          <i class="fas fa-desktop fa-2x desktop me-3"></i
+        ></a>
+        <a href="https://twitter.com/TheFeverFever" target="_blank"
+          ><i class="fab fa-twitter fa-2x twitter me-3"></i
+        ></a>
+        <a href="https://www.youtube.com/user/clgz00" target="_blank"
+          ><i class="fab fa-youtube fa-2x youtube me-3"></i
+        ></a>
+      </div>
+      <div class="auletto-social-links mx-auto">
+        <p class="text-center">Follow Frank Auletto:</p>
+        <a href="https://www.frankauletto.dev" target="_blank"
+          ><i class="fas fa-desktop fa-2x desktop me-3"></i
+        ></a>
+        <a href="https://twitter.com/fauletto" target="_blank">
+          <i class="fab fa-twitter fa-2x twitter me-3"></i
+        ></a>
+        <a href="mailto:fauletto@gmail.com" target="_blank">
+          <i class="fas fa-envelope fa-2x envelope me-3"></i
+        ></a>
+      </div>
     </nav>
     <script src="app.js"></script>
   </body>

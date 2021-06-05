@@ -12,3 +12,42 @@
 #t3-table {
   border-radius: 5px;
 }
+
+.navbar {
+  text-decoration: none;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer .auletto-social-links .fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.footer .auletto-social-links .fa-desktop:hover {
+  color: #eeba0b;
+}
+.footer .auletto-social-links .fa-envelope:hover {
+  color: #db4437;
+}
+.footer .lefever-social-links .fa-twitter:hover {
+  color: #1da1f2;
+}
+.footer .lefever-social-links .fa-youtube:hover {
+  color: #ff0000;
+}
+.footer .lefever-social-links .fa-desktop:hover {
+  color: #eeba0b;
+}
+
+#reddit-link,
+#blog-link {
+  text-decoration: none;
+  color: #023e8a;
+}
+
+#reddit-link:hover,
+#blog-link:hover {
+  color: #333;
+}

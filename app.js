@@ -29,7 +29,8 @@ const getRandNumber = (n) =>{
 const upperSelect = document.querySelector('#upperRadio');
 const lowerSelect = document.querySelector('#lowerRadio');
 const fullSelect = document.querySelector('#fullRadio');
-const rollDiceBtn = document.querySelector('#diceRollerBtn')
+const rollDiceBtn = document.querySelector('#diceRollerBtn');
+const saveToExcelBtn = document.querySelector('#saveButton');
 const t1Weight = document.querySelector('#t1WeightDisplay');
 const t2AWeight = document.querySelector('#t2AWeightDisplay');
 const t2BWeight = document.querySelector('#t2BWeightDisplay');
@@ -88,40 +89,46 @@ const getWeights = () =>{
 }
 
 const getT1Weight = () =>{
-  if(t1LiftDisplay.innerText.includes("Bench") || t1LiftDisplay.innerText.includes("Row")){
-    t1WeightBase = benchMax;
-  } else if(t1LiftDisplay.innerText.includes("Squat")){
+  if(t1LiftDisplay.innerText.includes("Squat")){
     t1WeightBase = squatMax
   } else if(t1LiftDisplay.innerText.includes("Deadlift")){
     t1WeightBase = deadliftMax;
   } else if(t1LiftDisplay.innerText.includes("Overhead") || t1LiftDisplay.innerText.includes("Push")){
     t1WeightBase = overheadMax;
+  } else if(t1LiftDisplay.innerText.includes("Incline")){
+    t1WeightBase = Math.round(Math.ceil(benchMax * .90) / 5 ) * 5;
+  } else if(t1LiftDisplay.innerText.includes("Bench") || t1LiftDisplay.innerText.includes("Row")){
+    t1WeightBase = benchMax;
   }
   return t1WeightBase;
 }
 
 const getT2AWeight = () =>{
-  if(t2ALiftDisplay.innerText.includes("Bench") || t2ALiftDisplay.innerText.includes("Row")){
-    t2AWeightBase = benchMax;
-  } else if(t2ALiftDisplay.innerText.includes("Squat")){
+  if(t2ALiftDisplay.innerText.includes("Squat")){
     t2AWeightBase = squatMax
   } else if(t2ALiftDisplay.innerText.includes("Deadlift")){
     t2AWeightBase = deadliftMax;
   } else if(t2ALiftDisplay.innerText.includes("Overhead") || t2ALiftDisplay.innerText.includes("Push")){
     t2AWeightBase = overheadMax;
+  } else if(t2ALiftDisplay.innerText.includes("Incline")){
+    t2AWeightBase = Math.round(Math.ceil(benchMax * .90) / 5 ) * 5;
+  } else if(t2ALiftDisplay.innerText.includes("Bench") || t2ALiftDisplay.innerText.includes("Row")){
+    t2AWeightBase = benchMax;
   }
   return t2AWeightBase;
 }
 
 const getT2BWeight = () =>{
-  if(t2BLiftDisplay.innerText.includes("Bench") || t2BLiftDisplay.innerText.includes("Row")){
-    t2BWeightBase = benchMax;
-  } else if(t2BLiftDisplay.innerText.includes("Squat")){
+  if(t2BLiftDisplay.innerText.includes("Squat")){
     t2BWeightBase = squatMax
   } else if(t2BLiftDisplay.innerText.includes("Deadlift")){
     t2BWeightBase = deadliftMax;
   } else if(t2BLiftDisplay.innerText.includes("Overhead") || t2BLiftDisplay.innerText.includes("Push")){
     t2BWeightBase = overheadMax;
+  } else if(t2BLiftDisplay.innerText.includes("Incline")){
+    t2BWeightBase = Math.round(Math.ceil(benchMax * .90) / 5 ) * 5;
+  } else if(t2BLiftDisplay.innerText.includes("Bench") || t2BLiftDisplay.innerText.includes("Row")){
+    t2BWeightBase = benchMax;
   }
   return t2BWeightBase;
 }
@@ -210,12 +217,6 @@ const getLiftName = (userInput, liftName) =>{
   : userInput.value;
 }
 
-t3LiftReset = () =>{
-  t3ALiftSelect.value = "Select a lift";
-  t3BLiftSelect.value = "Select a lift";
-  t3CLiftSelect.value = "Select a lift";
-}
-
 const getT3Lifts = () =>{
   t3UpperCopy = [...upperT3];
   t3LowerCopy = [...lowerT3];
@@ -247,6 +248,14 @@ const getRoutine = () =>{
     fullRoutine();
   }
 }
+
+$(function() {
+  $('#saveButton').click(function() {
+    let url = 'data:application/vnd.ms-excel,' + encodeURIComponent($('#tableWrap').html())
+    location.href = url
+    return false
+  })
+});
 
 rollDiceBtn.addEventListener('click', function(){
   getMaxes();
